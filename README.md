@@ -1,4 +1,4 @@
-WDNet: A Novel Wavelet-guided Hierarchical Diffusion Network for Multi-Target Segmentation in Colonoscopy Images
+#WDNet: A Novel Wavelet-guided Hierarchical Diffusion Network for Multi-Target Segmentation in Colonoscopy Images
 
 1、Abstract. Semantic segmentation in colonoscopy images is pivotal in
 aiding healthcare professionals to interpret images and enhance diagnos-

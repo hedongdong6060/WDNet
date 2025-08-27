@@ -1,0 +1,38 @@
+MODEL:
+  model_names: xxx
+  model_spec: xx
+
+  load_Pretraining: ""
+
+DATASET:
+  dataset: New_PolypDateset
+  name: New_PolypDateset
+  dataroot: "./dataset/New_PolypDateset/"
+  ignore_index: 255
+  num_labels: 3
+  mean: [0.49653283, 0.3011748, 0.21566062]
+  std: [0.29782128, 0.20789528, 0.16115053]
+  Low_mean: [0.154959]
+  Low_std: [0.988784]
+  High_mean: [0.744853]
+  High_std: [0.376185]
+
+TRAIN:
+  nepoch: 50
+  batch_size: 24
+  size: [576, 720]
+  num_workers: 0
+  eval_interval: 2
+  checkpoints_dir: "checkpoints"
+  node: 1
+
+OPTIMIZER:
+  lr: 0.00006
+  weight_decay: 0.05
+
+SCHEDULER:
+  warmup_epoch: 5
+  lr_warmup: linear
+  warmup_ratio: 0.000001
+
+continue_train: False

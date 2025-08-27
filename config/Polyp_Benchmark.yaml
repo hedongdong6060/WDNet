@@ -1,0 +1,38 @@
+MODEL:
+  model_names: xxx
+  model_spec: xx
+
+  load_Pretraining: ""
+
+DATASET:
+  dataset: Polyp_Benchmark
+  name: Polyp_Benchmark
+  dataroot: "./dataset/Polyp_Benchmark"
+  ignore_index: 255
+  num_labels: 2
+  mean: [0.3963216, 0.2872453, 0.24057563]
+  std: [0.31274605, 0.2466672, 0.22493656]
+  Low_mean: [0.307456]
+  Low_std: [0.204696]
+  High_mean: [0.441678]
+  High_std: [0.056673]
+
+TRAIN:
+  nepoch: 50
+  batch_size: 8
+  size: [288, 384]
+  num_workers: 0
+  eval_interval: 5
+  checkpoints_dir: "checkpoints"
+  node: 1
+
+OPTIMIZER:
+  lr: 0.00006
+  weight_decay: 0.05
+
+SCHEDULER:
+  warmup_epoch: 5
+  lr_warmup: linear
+  warmup_ratio: 0.000001
+
+continue_train: False

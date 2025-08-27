@@ -1,0 +1,38 @@
+MODEL:
+  model_names: xxx
+  model_spec: xx
+
+  load_Pretraining: ""
+
+DATASET:
+  dataset: kvasir-instrument
+  name: kvasir-instrument
+  dataroot: "./dataset/kvasir-instrument"
+  ignore_index: 255
+  num_labels: 2
+  mean: [0.4008257, 0.2694097, 0.18408749]
+  std: [0.28453645, 0.19589953, 0.13300987]
+  Low_mean: [0.321503]
+  Low_std: [0.212415]
+  High_mean: [0.471739]
+  High_std: [0.058526]
+
+TRAIN:
+  nepoch: 50
+  batch_size: 24
+  size: [288, 384]
+  num_workers: 0
+  eval_interval: 5
+  checkpoints_dir: "checkpoints"
+  node: 1
+
+OPTIMIZER:
+  lr: 0.00006
+  weight_decay: 0.05
+
+SCHEDULER:
+  warmup_epoch: 5
+  lr_warmup: linear
+  warmup_ratio: 0.000001
+
+continue_train: False

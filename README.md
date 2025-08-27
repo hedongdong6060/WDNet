@@ -38,7 +38,9 @@ Just enjoy it!
 The training and testing experiments are conducted using PyTorch with a single NVIDIA 4080 with 24 GB Memory.
 
 4、Downloading necessary data:
+https://osf.io/mpk3j/files/osfstorage
 
+https://osf.io/6e4a8/files/osfstorage
 
 5、 Citation
    Please cite our paper if you find the work useful
